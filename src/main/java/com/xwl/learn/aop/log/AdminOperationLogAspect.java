@@ -62,17 +62,17 @@ public class AdminOperationLogAspect {
     String[] parameterNames = parameterNameDiscoverer.getParameterNames(method);
     Object[] args = pjp.getArgs();
     if (args == null || parameterNames == null || args.length == 0 || parameterNames.length == 0) {
-      System.out.println("");
+      System.out.println("  ");
     } else if (args.length != parameterNames.length) {
       Map<String, String> updateInfo = Maps.newHashMap();
       updateInfo.put("parameterNames", JSON.toJSONString(parameterNames));
       updateInfo.put("args", JSON.toJSONString(args));
-      System.out.println(moduleCode+actionCode+JSON.toJSONString(updateInfo)+operation);
+      System.out.println(moduleCode+"  "+actionCode+"  "+JSON.toJSONString(updateInfo)+"  "+operation);
     } else {
       Map<String, String> updateInfo = Maps.newHashMap();
       Stream.iterate(0, i -> i + 1).limit(parameterNames.length)
           .forEach(i -> updateInfo.put(parameterNames[i], JSON.toJSONString(args[i])));
-      System.out.println(moduleCode+actionCode+JSON.toJSONString(updateInfo)+operation);
+      System.out.println(moduleCode+"  "+actionCode+"  "+JSON.toJSONString(updateInfo)+"  "+operation);
     }
   }
 }
