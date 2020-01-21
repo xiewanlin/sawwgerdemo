@@ -1,6 +1,6 @@
 package com.xwl.learn.service.impl;
 
-import com.xwl.learn.lock.aop.DistributedLock;
+import com.xwl.learn.aop.lock.DistributedLock;
 import com.xwl.learn.service.TestServer;
 import com.xwl.learn.vo.innerVo.UserVo;
 

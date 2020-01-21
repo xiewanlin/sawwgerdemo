@@ -1,4 +1,4 @@
-package com.xwl.learn.log.aop;
+package com.xwl.learn.aop.log;
 
 import com.alibaba.fastjson.JSON;
 import com.google.common.collect.Maps;
@@ -30,7 +30,7 @@ public class AdminOperationLogAspect {
   private static final String SERVLET_PATH_TEMPLATE = "/([\\w\\-]+?)/([\\w\\-]+?)/([\\w\\-]+?)/";
   private static final Pattern SERVLET_PATTERN = Pattern.compile(SERVLET_PATH_TEMPLATE);
 
-  @Pointcut("@annotation(com.xwl.learn.log.aop.AdminOperationLog)")
+  @Pointcut("@annotation(com.xwl.learn.aop.log.AdminOperationLog)")
   private void adminLogPoint() {
 
   }

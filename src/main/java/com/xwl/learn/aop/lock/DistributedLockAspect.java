@@ -1,6 +1,6 @@
-package com.xwl.learn.lock.aop;
+package com.xwl.learn.aop.lock;
 
-import com.xwl.learn.lock.server.DistributedLockService;
+import com.xwl.learn.aop.lock.server.DistributedLockService;
 import java.lang.reflect.Method;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -28,7 +28,7 @@ public class DistributedLockAspect {
   @Autowired
   private DistributedLockService distributedLock;
 
-  @Pointcut("@annotation(com.xwl.learn.lock.aop.DistributedLock)")
+  @Pointcut("@annotation(com.xwl.learn.aop.lock.DistributedLock)")
   private void lockPoint() {
 
   }

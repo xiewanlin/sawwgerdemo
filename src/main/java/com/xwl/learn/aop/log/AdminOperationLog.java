@@ -1,4 +1,4 @@
-package com.xwl.learn.log.aop;
+package com.xwl.learn.aop.log;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Inherited;

@@ -1,6 +1,6 @@
-package com.xwl.learn.lock.server.impl;
+package com.xwl.learn.aop.lock.server.impl;
 
-import com.xwl.learn.lock.server.DistributedLockService;
+import com.xwl.learn.aop.lock.server.DistributedLockService;
 import java.util.UUID;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

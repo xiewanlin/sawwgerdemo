@@ -1,4 +1,4 @@
-package com.xwl.learn.lock.server;
+package com.xwl.learn.aop.lock.server;
 
 /**
  * distributed lock

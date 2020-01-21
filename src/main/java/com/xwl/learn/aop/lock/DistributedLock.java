@@ -1,4 +1,4 @@
-package com.xwl.learn.lock.aop;
+package com.xwl.learn.aop.lock;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Inherited;
