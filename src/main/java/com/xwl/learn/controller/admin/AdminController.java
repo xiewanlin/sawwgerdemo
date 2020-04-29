@@ -1,6 +1,7 @@
 package com.xwl.learn.controller.admin;
 
 import com.xwl.learn.aop.log.AdminOperationLog;
+import com.xwl.learn.vo.common.ResultVo;
 import com.xwl.learn.vo.innerVo.LoginDto;
 import com.xwl.learn.vo.innerVo.UserVo;
 import io.swagger.annotations.Api;
@@ -26,20 +27,15 @@ public class AdminController {
     @ApiOperation(value = "登录管理中心")
     @PostMapping(value = "/login/v1", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     @AdminOperationLog
-    public Map<String, String> login(@RequestBody @Valid UserVo userVo) {
-        Map<String, String> map = null;
+    public ResultVo login(@RequestBody @Valid UserVo userVo) {
         if ("xwl".equals(userVo.getUsername()) && "123456".equals(userVo.getPassword())) {
-            map = new HashMap<>();
-            map.put("access_token", "123456789");
-            map.put("token_type", "bearer");
-            map.put("expires_in", "3599");
-            map.put("scope", "app");
+            return new ResultVo(0, "调用成功", null);
         }
-        return map;
+        return new ResultVo(700301, "用户名或密码错误", null);
     }
 
     @ApiOperation(value = "获取用户登录列表")
-    @GetMapping(value = "/getLoginTimes/v1", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "/getLoginTimes/v1", produces = MediaType.APPLICATION_JSON_VALUE)
     @AdminOperationLog
     public List<LoginDto> getLoginTimes(@RequestParam String username) {
         List<LoginDto> retList = new ArrayList<>();
