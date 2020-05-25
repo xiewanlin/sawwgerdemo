@@ -1,7 +1,8 @@
 package com.xwl.learn.aop.validator;
 
-import com.yxzq.payment.enums.base.BaseDictCode;
-import com.yxzq.payment.validator.annotations.DictCode;
+
+import com.xwl.learn.aop.validator.annotations.DictCode;
+import com.xwl.learn.enums.BaseDictCode;
 import java.lang.reflect.Method;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
