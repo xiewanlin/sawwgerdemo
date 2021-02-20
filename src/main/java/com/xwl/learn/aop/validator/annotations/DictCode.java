@@ -11,7 +11,7 @@ import javax.validation.Constraint;
 import javax.validation.Payload;
 
 /**
- * @author wunian
+ * @author xiewanlin
  * @version 1.0
  * @description 字典项校验器
  * @date 2019/12/30 11:47

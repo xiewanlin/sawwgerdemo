@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * aspect of distribute lock
- * @author chenhuahuan
+ * @author xiewanlin
  */
 @Slf4j
 @Aspect

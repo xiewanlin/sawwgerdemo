@@ -3,7 +3,7 @@ package com.xwl.learn.aop.lock.server;
 /**
  * distributed lock
  *
- * @author chenhuahuan
+ * @author xiewanlin
  */
 public interface DistributedLockService {
 

@@ -18,7 +18,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.core.env.Environment;
 
 /**
- * @author wunian
+ * @author xiewanlin
  * @description 编号id生成器
  * @apiNote 支持最多30台机器ip
  * 日期+17位（当天时间秒数）+5位ip定位+5位序列号

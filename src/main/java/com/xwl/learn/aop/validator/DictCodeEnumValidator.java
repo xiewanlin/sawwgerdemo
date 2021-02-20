@@ -10,7 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * @author wunian
+ * @author xiewanlin
  * @version 1.0
  * @description 字典器校验器
  * @date 2019/12/30 11:47

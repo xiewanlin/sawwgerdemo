@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * 所有数据字典的接口
- * @author wunian
+ * @author xiewanlin
  */
 public interface BaseDictCode {
 

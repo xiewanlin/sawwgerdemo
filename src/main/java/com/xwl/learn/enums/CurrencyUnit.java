@@ -1,7 +1,7 @@
 package com.xwl.learn.enums;
 
 /**
- * @author wunian
+ * @author xiewanlin
  * @version 1.0
  * @description 货币单位枚举
  * @date 2019/12/27 14:58
